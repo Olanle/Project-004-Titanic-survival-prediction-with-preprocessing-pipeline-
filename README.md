@@ -79,3 +79,40 @@ Performed 5-fold cross-validation to check model stability and compute average p
 
 ```bash
 pip install pandas scikit-learn joblib
+````
+
+4. Run the notebook/script to train the model and generate predictions.
+5. Load the saved model for future predictions:
+
+```python
+import joblib
+
+pipeline = joblib.load('titanic_pipeline_model.joblib')
+predictions = pipeline.predict(new_data)
+```
+
+---
+
+## Results
+
+* Validation Accuracy: ~ 0.7877
+* Cross-Validation Mean Accuracy: ~  0.8058
+
+---
+
+## Libraries Used
+
+* pandas
+* numpy
+* scikit-learn
+* joblib
+
+---
+
+## Author
+
+**Olawale Samuel Olaitan**
+Bachelor of Science in Electronics and Computer Engineering
+[GitHub Profile](https://github.com/Olanle)
+
+---
